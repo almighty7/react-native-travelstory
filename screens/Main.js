@@ -125,7 +125,7 @@ const Main = ({navigation}) => {
         style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}
         refreshing={refreshing}
         onRefresh={onRefresh}>
-        <Text style={{fontSize: 25}}>Add albums from top + button</Text>
+        <Text style={{fontSize: 25}}>Añade álbumes con el Botón +</Text>
         <Icons
           name="compass-outline"
           size={100}
