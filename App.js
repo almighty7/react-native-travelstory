@@ -115,7 +115,7 @@ const DrawerStack = () => {
         name="Profile"
         component={Profile}
         options={{
-          headerTitle: 'My Profile',
+          headerTitle: 'Mi Perfil',
           headerStyle: {
             backgroundColor: '#59C3C3',
           },
@@ -135,7 +135,7 @@ const HomeStack = ({navigation}) => {
         name="Main"
         component={Main}
         options={{
-          headerTitle: 'My Trips',
+          headerTitle: 'Mis Viajes',
           headerStyle: {
             backgroundColor: '#59C3C3',
           },
@@ -147,7 +147,7 @@ const HomeStack = ({navigation}) => {
         name="NewTrip"
         component={NewTrip}
         options={{
-          headerTitle: 'New Trip',
+          headerTitle: 'Nuevo Viaje',
           headerStyle: {
             backgroundColor: '#59C3C3',
           },
@@ -159,7 +159,7 @@ const HomeStack = ({navigation}) => {
         name="TripDetails"
         component={TripDetails}
         options={{
-          headerTitle: 'Trip Details',
+          headerTitle: 'Detalles del Viaje',
           headerStyle: {
             backgroundColor: '#59C3C3',
           },
@@ -183,7 +183,7 @@ const HomeStack = ({navigation}) => {
         name="PostNew"
         component={PostNew}
         options={{
-          headerTitle: 'New Post',
+          headerTitle: 'Nueva Publicación',
           headerStyle: {
             backgroundColor: '#59C3C3',
           },

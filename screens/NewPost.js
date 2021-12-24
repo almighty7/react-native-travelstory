@@ -150,13 +150,13 @@ const NewPost = ({navigation, route}) => {
       })
       .then(() => {
         Alert.alert(
-          'Post published!',
-          'Your post has been published Successfully!',
+          'Publicación hecha!',
+          'Tu publicación fue publicada satisfactoriamente!',
         );
       })
       .catch(error => {
         console.log(
-          'Something went wrong with added post to firestore.',
+          'Algo fallo añadiendo a Firestore.',
           error,
         );
       });

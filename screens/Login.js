@@ -42,7 +42,7 @@ const Login = ({navigation}) => {
       return false;
     } else {
       if (pwd.length <= 0) {
-        alert('Enter a valid password!');
+        alert('Ingrese una contraseña válida!');
         return false;
       } else {
         auth()

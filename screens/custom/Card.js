@@ -14,7 +14,7 @@ const Card = ({text, location, dbimage}) => {
 
   const [name, setname] = useState('');
   const [image, setimage] = useState(
-    'https://www.pinclipart.com/picdir/big/547-5474602_character-avatar-clipart.png',
+    'https://w7.pngwing.com/pngs/831/88/png-transparent-user-profile-computer-icons-user-interface-mystique-miscellaneous-user-interface-design-smile.png',
   );
 
   const loadData = async () => {

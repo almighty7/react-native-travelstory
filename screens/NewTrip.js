@@ -75,7 +75,7 @@ const NewTrip = ({navigation}) => {
       description.length == 0 ||
       selectedDate.length > 12
     ) {
-      alert('Please fill all the fields!');
+      alert('Por favor rellene todos los campos!');
     } else {
       addAlbum();
       console.log('user id ', userid);
@@ -96,7 +96,7 @@ const NewTrip = ({navigation}) => {
         description: description,
         image: '',
       })
-      .then(() => alert('Album Created!'))
+      .then(() => alert('Album creado!'))
       .then(() => navigation.goBack())
       .then(() => clearStates())
       .catch(e => console.log(e));

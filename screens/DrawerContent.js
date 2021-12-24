@@ -37,7 +37,7 @@ export const DrawerContent = props => {
               <Icon name="account-outline" color={color} size={28} />
             )}
             labelStyle={{fontSize: 20}}
-            label="Profile"
+            label="Perfil"
             onPress={() => {
               props.navigation.navigate('Profile');
             }}
@@ -50,7 +50,7 @@ export const DrawerContent = props => {
             )}
             labelStyle={{fontSize: 20}}
             onPress={logout}
-            label="Log Out"
+            label="Cerrar Sesión"
           />
         </View>
       </View>

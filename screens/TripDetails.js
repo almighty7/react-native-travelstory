@@ -90,7 +90,7 @@ const TripDetails = ({navigation, route}) => {
           size={120}
           onPress={() => navigation.navigate('PostNew', {title: title})}
         />
-        <Text>Add more post to your album</Text>
+        <Text>Añade publicaciones a tus álbumes</Text>
       </View>
     );
   };

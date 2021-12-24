@@ -84,11 +84,11 @@ const Profile = ({navigation}) => {
         profile: imageUrl,
       })
       .then(() => {
-        Alert.alert('Profile Update!', 'Your Profile Updated Successfully!');
+        Alert.alert('Perfil actualizado!', 'Perfil actualizado exitosamente!');
       })
       .catch(error => {
         console.log(
-          'Something went wrong with added post to firestore.',
+          'Algo falló añadiendo a Firestore.',
           error,
         );
       });
@@ -96,7 +96,7 @@ const Profile = ({navigation}) => {
 
   const uploadImage = async () => {
     if (image == null) {
-      alert('Please add an image!');
+      alert('Por favor agregué una imagen!');
       return null;
     }
     const uploadUri = image;
@@ -170,7 +170,7 @@ const Profile = ({navigation}) => {
         address: address,
         dob: dob,
       })
-      .then(() => alert('Profile Updated Successfully!'))
+      .then(() => alert('Perfil actualizado exitosamente!!'))
       .catch(e => console.log(e));
   };
 
@@ -234,7 +234,7 @@ const Profile = ({navigation}) => {
               <TextInput
                 style={[styles.input, styles.dobicon]}
                 value={dob}
-                placeholder="F. Nacimiento"
+                placeholder="Nacimiento"
                 // onChangeText={e => setdob(e)}
               />
               <Icons

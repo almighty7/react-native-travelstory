@@ -128,7 +128,7 @@ const Register = ({navigation}) => {
                     color: 'white',
                     width: '80%',
                   }}
-                  placeholder="F. DE NACIMIENTO"
+                  placeholder="NACIMIENTO"
                   value={selectedDate}
                   // onChangeText={e => setdob(e)}
                   placeholderTextColor="white"

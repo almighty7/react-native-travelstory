@@ -93,10 +93,10 @@ const PostNew = ({navigation, route}) => {
         {
           title: 'TravelStory App GPS Permission',
           message:
-            'TravelStory App needs to locate your location ' +
-            'so we can mark on the map.',
-          buttonNeutral: 'Ask Me Later',
-          buttonNegative: 'Cancel',
+            'TravelStory App necesita obtener tu ubicación ' +
+            'y asi ubicarte en el mapa.',
+          buttonNeutral: 'Preguntar después',
+          buttonNegative: 'Cancelar',
           buttonPositive: 'OK',
         },
       );
@@ -162,7 +162,7 @@ const PostNew = ({navigation, route}) => {
   const submitPost = async () => {
     post();
     if (description.length == 0 || location.length == 0) {
-      alert('All the fields are required!');
+      alert('Todos los campos son requeridos!');
       return;
     }
     const imageUrl = await uploadImage();
@@ -190,14 +190,14 @@ const PostNew = ({navigation, route}) => {
       })
       .then(() => {
         Alert.alert(
-          'Post published!',
-          'Your post has been published Successfully!',
+          'Publicación hecha!',
+          'Tu publicación fue publicada satisfactoriamente!',
         );
       })
       .then(() => navigation.goBack())
       .catch(error => {
         console.log(
-          'Something went wrong with added post to firestore.',
+          'Algo fallo añadiendo a Firestore.',
           error,
         );
       });
@@ -233,7 +233,7 @@ const PostNew = ({navigation, route}) => {
 
   const uploadImage = async () => {
     if (image == null) {
-      alert('Please add an image!');
+      alert('Por favor agregue una imagen!');
       return null;
     }
     const uploadUri = image;
@@ -265,7 +265,7 @@ const PostNew = ({navigation, route}) => {
     <ScrollView style={styles.container}>
       {/* <Text>{title}</Text> */}
       <View style={[styles.imageselect, {height: height * 0.15}]}>
-        <Text style={styles.text}>Add Image</Text>
+        <Text style={styles.text}>Añade una imagen</Text>
         <View
           style={{
             flexDirection: 'row',
@@ -276,12 +276,12 @@ const PostNew = ({navigation, route}) => {
           <TouchableOpacity
             style={{...globalStyles.btnBlue, height: 40}}
             onPress={selectpic}>
-            <Text style={{color: 'white'}}>Select</Text>
+            <Text style={{color: 'white'}}>Seleccionar</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{...globalStyles.btnBlue, height: 40}}
             onPress={takepic}>
-            <Text style={{color: 'white'}}>Take</Text>
+            <Text style={{color: 'white'}}>Tomar foto</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -303,7 +303,7 @@ const PostNew = ({navigation, route}) => {
           onChangeText={text => setdescription(text)}
         />
       </View>
-      <Text style={styles.text}>Añade una descripción</Text>
+      <Text style={styles.text}>Añade tu ubicación</Text>
       <View style={styles.mapview}>
         <MapView
           provider={PROVIDER_GOOGLE}
@@ -327,7 +327,7 @@ const PostNew = ({navigation, route}) => {
       </View>
       <View style={styles.button}>
         <TouchableOpacity style={globalStyles.btnBlue} onPress={submitPost}>
-          <Text style={{color: 'white'}}>Post</Text>
+          <Text style={{color: 'white'}}>Publicar</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
